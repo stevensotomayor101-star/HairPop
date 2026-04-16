@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Georgia", serif;
+
+  --color-brand-paper: #F9F9F7;
+  --color-brand-ink: #111111;
+  --color-brand-accent: #E0FF4F;
+  --color-brand-muted: #888888;
+  --color-brand-line: rgba(0,0,0,0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-brand-paper text-brand-ink font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold uppercase tracking-tight;
+  }
+
+  .editorial-header {
+    @apply text-[11px] uppercase tracking-[2px] text-brand-muted mb-8 font-semibold;
+  }
+}
+
+.nav-link-hover {
+  @apply relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-brand-ink after:transition-all after:duration-300 hover:after:w-full;
+}
+
+.column-border {
+  @apply border-r border-brand-line last:border-r-0;
+}
