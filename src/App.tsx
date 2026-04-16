@@ -226,7 +226,7 @@ function Home({ onNavigate }: { onNavigate: (page: Page) => void }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="font-serif italic text-4xl sm:text-5xl md:text-7xl leading-[1.1] mb-8 normal-case font-normal">
+            <h1 className="font-serif italic text-5xl sm:text-6xl md:text-7xl leading-[1.1] mb-8 normal-case font-normal">
               Biodegradable<br />
               Organic<br />
               24 Hours.
