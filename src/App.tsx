@@ -49,7 +49,7 @@ const CATEGORIES = [
   { id: 'hair', name: 'Top', brand: 'HairPop', image: 'https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&q=80&w=800' },
   { id: 'brows', name: 'Eyebrows', brand: 'BrowPop', image: 'https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&q=80&w=800' },
   { id: 'facial', name: 'Facial Hair', brand: 'StachePop', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=800' },
-  { id: 'party', name: 'Pubic Hair', brand: 'PartyPop', image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=800' },
+  { id: 'party', name: 'Body Hair', brand: 'PartyPop', image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=800' },
 ];
 
 const BUNDLES: Bundle[] = [
