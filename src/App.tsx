@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import { cn } from './lib/utils';
 import myLogo from './Logo.png';
+import pillImage from './Pill.png';
 
 // --- Types ---
 
@@ -283,9 +284,9 @@ function Home({ onNavigate }: { onNavigate: (page: Page) => void }) {
           <div className="relative">
             <div className="aspect-square rounded-full overflow-hidden border-[12px] border-white shadow-2xl flex items-center justify-center bg-brand-cream">
               <img
-                src={myLogo}
-                alt="HairPop Logo"
-                className="w-2/3 h-2/3 object-contain"
+                src={pillImage}
+                alt="HairPop Pill"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
