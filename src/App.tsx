@@ -23,7 +23,7 @@ import {
   Check
 } from 'lucide-react';
 import { cn } from './lib/utils';
-import myLogo from './lib/src/my-image.png';
+import myLogo from './lib/src/my-image.png/Screenshot 2026-05-02 190103.png';
 
 // --- Types ---
 
