@@ -23,6 +23,7 @@ import {
   Check
 } from 'lucide-react';
 import { cn } from './lib/utils';
+import myLogo from './lib/src/my-image.png';
 
 // --- Types ---
 
@@ -72,7 +73,8 @@ const STYLES = ['Solid', 'Ombre', 'Glow-in-the-dark'];
 // --- Components ---
 
 const Logo = ({ className }: { className?: string }) => (
-  <div className={cn("flex items-center gap-1", className)}>
+  <div className={cn("flex items-center gap-3", className)}>
+    <img src={myLogo} alt="HairPop Logo" className="h-10 w-10 object-contain" />
     <span className="font-sans text-4xl font-black tracking-tighter uppercase">Hair<span className="font-light text-brand-muted">Pop</span></span>
   </div>
 );
