@@ -396,26 +396,23 @@ function Create({
           {/* Preview */}
           <div className="flex-1 p-10 column-border flex flex-col justify-center">
             <h2 className="editorial-header">Visualizer</h2>
-            <div className="w-full aspect-[4/5] rounded-xl overflow-hidden relative shadow-lg border border-brand-line">
-              <div 
-                className="absolute inset-0 transition-colors duration-500"
-                style={{ backgroundColor: customization.color.hex }}
+            <div className="w-full aspect-[4/5] rounded-xl overflow-hidden relative shadow-lg border border-brand-line bg-gray-100">
+              {/* Pill image rotated vertical */}
+              <img
+                src={pillImage}
+                alt="Pill"
+                className="absolute inset-0 w-full h-full object-cover"
+                style={{ transform: 'rotate(90deg)', transformOrigin: 'center' }}
               />
-              {customization.pattern !== 'None' && (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 0.8 }}
-                  className="absolute inset-0 pointer-events-none"
-                  style={{ 
-                    backgroundImage: customization.pattern === 'Highlights' 
-                      ? 'linear-gradient(90deg, transparent 35%, currentColor 50%, transparent 65%)'
-                      : 'repeating-linear-gradient(45deg, currentColor, currentColor 15px, transparent 15px, transparent 30px)',
-                    backgroundSize: customization.pattern === 'Highlights' ? '40px 100%' : '60px 60px',
-                    color: `hsl(${customization.patternHue}, ${customization.patternSaturation ?? 100}%, 50%)`
-                  }}
-                />
-              )}
-              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent" />
+              {/* Color overlay on top half (the plain cap / non-logo side) */}
+              <div
+                className="absolute top-0 left-0 w-full transition-colors duration-500"
+                style={{
+                  height: '50%',
+                  backgroundColor: customization.color.hex,
+                  mixBlendMode: 'multiply',
+                }}
+              />
             </div>
             <p className="text-[10px] uppercase tracking-widest text-brand-muted mt-6 text-center font-bold">
               {customization.pattern !== 'None' ? `${customization.pattern} Active` : 'Solid Pigment'}
