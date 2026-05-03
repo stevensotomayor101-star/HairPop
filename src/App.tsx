@@ -281,12 +281,11 @@ function Home({ onNavigate }: { onNavigate: (page: Page) => void }) {
       <section className="py-24 px-6 bg-brand-cream">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
           <div className="relative">
-            <div className="aspect-square rounded-full overflow-hidden border-[12px] border-white shadow-2xl">
-              <img 
-                src="https://images.unsplash.com/photo-1527799822344-42ad8c5827d7?auto=format&fit=crop&q=80&w=1000" 
-                alt="Nanotech" 
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
+            <div className="aspect-square rounded-full overflow-hidden border-[12px] border-white shadow-2xl flex items-center justify-center bg-brand-cream">
+              <img
+                src={myLogo}
+                alt="HairPop Logo"
+                className="w-2/3 h-2/3 object-contain"
               />
             </div>
           </div>
